@@ -1,5 +1,5 @@
 // File: src/pages/Tips.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Tips.css";
 
 interface TipSlide {
