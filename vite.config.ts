@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/',  // <-- important for GitHub Pages / subfolder
+  base: "/", // "/" is fine for Vercel root domain
 })
+
