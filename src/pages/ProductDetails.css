@@ -1,0 +1,222 @@
+/* ProductDetails.css */
+
+/* Taller hero */
+.product-detail-hero {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.product-detail-hero .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------- */
+/* Main Two-Column Layout */
+/* ---------------------------------------------------- */
+.product-layout-section {
+  display: flex;
+  min-height: 80vh;
+  background-color: #f0f0f0;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left side for text content */
+.layout-left {
+  flex: 0 0 55%;
+  padding: 4rem 2rem 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.layout-left .title-text {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.layout-left .description-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 400px;
+  color: #3c3b3b;
+}
+
+/* Middle section for product image, centered in its own flex container */
+.layout-middle {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding: 2rem;
+}
+
+.product-packet-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(10px 20px 20px #03030333);
+}
+
+/* The colored background for the right section, positioned absolutely */
+.layout-right-colored-part {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%; /* Match the width of the .layout-middle section */
+  z-index: 1;
+}
+
+/* ---------------------------------------------------- */
+/* Ingredients Section (Equal Card Widths) */
+/* ---------------------------------------------------- */
+.ingredients-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.ingredients-subheading {
+  font-size: 2rem;
+  color: #0945a4;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.ingredients-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ingredient-card {
+  /* This is the key change to ensure equal width */
+  width: 200px; /* Fixed width for consistent size */
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+}
+
+.ingredient-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.ingredient-card h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0945a4;
+  font-weight: 600;
+}
+
+.ingredient-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------- */
+/* Responsive Design */
+/* ---------------------------------------------------- */
+
+@media (max-width: 992px) {
+  .product-layout-section {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .layout-left {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .layout-left .description-text {
+    max-width: 100%;
+  }
+
+  .layout-middle {
+    flex: 0 0 100%;
+    order: -1; /* Place image first on smaller screens */
+    padding: 0;
+  }
+
+  .product-packet-image {
+    width: 250px;
+  }
+
+  .layout-right-colored-part {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .ingredients-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .ingredient-card {
+    /* On mobile, cards should be flexible */
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-layout-section {
+    padding: 1rem 0;
+  }
+  .layout-left .title-text {
+    font-size: 2.5rem;
+  }
+  .layout-left .description-text {
+    font-size: 1.1rem;
+  }
+  .product-packet-image {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-hero {
+    height: 40vh;
+  }
+  .layout-left .title-text {
+    font-size: 2rem;
+  }
+  .layout-left .description-text {
+    font-size: 1rem;
+  }
+}

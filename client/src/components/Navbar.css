@@ -1,0 +1,149 @@
+/* Navbar base */
+.navbar {
+  background-color: #022179e6; /* Deep blue, 90% opacity */
+  color: white;
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* subtle glass effect */
+}
+
+
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar-link button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 350;
+  cursor: pointer;
+  position: relative; /* needed for pseudo-element */
+  transition: color 0.3s;
+}
+
+/* Pink underline on hover */
+.navbar-link button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* adjust spacing */
+  width: 0%;
+  height: 2px;
+  background-color: #e372b9;
+  transition: width 0.3s ease;
+}
+
+.navbar-link button:hover::after {
+  width: 100%;
+}
+
+/* Right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Hamburger */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Drawer */
+.navbar-drawer {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.navbar-drawer.closed {
+  display: none;
+}
+
+.navbar-drawer.open {
+  display: flex;
+}
+
+/* Drawer buttons */
+.navbar-drawer button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  text-align: left;
+  position: relative; /* needed for pseudo-element */
+  transition: color 0.3s;
+}
+
+/* Pink underline effect */
+.navbar-drawer button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* distance from text */
+  width: 0%;
+  height: 2px;
+  background-color: #e372b9;
+  transition: width 0.3s ease;
+}
+
+.navbar-drawer button:hover::after {
+  width: 100%;
+}
+
+.terms-container{
+  padding-top: 100px; 
+}
+
+.privacy-container{
+  padding-top: 100px; 
+}
+.contact-top-section{
+  padding-top: 73px; 
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide desktop nav items */
+  }
+  .navbar-toggle {
+    display: block; /* Show hamburger */
+  }
+}

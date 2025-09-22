@@ -1,0 +1,21 @@
+.scroll-to-top {
+  @apply fixed bottom-6 right-6 bg-pink-600 text-white text-2xl 
+         w-12 h-12 flex items-center justify-center rounded-full 
+         shadow-lg cursor-pointer transition-transform duration-300 
+         hover:bg-blue-900 hover:scale-110;
+  z-index: 50;
+}
+
+/* Add a subtle pulse animation for visibility */
+.scroll-to-top {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}

@@ -1,0 +1,125 @@
+/* Container */
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem;
+}
+
+/* Heading */
+.terms-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #1e3a8a; /* deep blue */
+  margin-bottom: 2rem;
+}
+
+/* Card */
+.terms-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+.terms-link {
+  color: #1e40af;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Section */
+.terms-section {
+  margin-top: 1.5rem;
+}
+
+.terms-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.terms-text {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Lists */
+.terms-card ul {
+  list-style: disc inside;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+}
+
+.terms-card li {
+  margin: 0.25rem 0;
+  color: #374151;
+}
+
+/* 🔹 Responsive Styles */
+@media (max-width: 1024px) {
+  .terms-container {
+    padding: 6rem 1.25rem;
+  }
+
+  .terms-heading {
+    font-size: 2.2rem;
+  }
+
+  .terms-subheading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 5rem 1rem;
+  }
+
+  .terms-heading {
+    font-size: 2rem;
+  }
+
+  .terms-card {
+    padding: 1.5rem;
+  }
+
+  .terms-subheading {
+    font-size: 1.3rem;
+  }
+
+  .terms-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    padding: 4rem 1rem;
+  }
+
+  .terms-heading {
+    font-size: 1.6rem;
+  }
+
+  .terms-card {
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .terms-subheading {
+    font-size: 1.1rem;
+  }
+
+  .terms-text,
+  .terms-card li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

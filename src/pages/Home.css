@@ -1,0 +1,160 @@
+/* Container */
+.home-container {
+  position: relative;
+  min-height: 100vh; /* better for mobile than fixed height */
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem; /* prevent edges clipping */
+}
+
+/* Background Images */
+.home-background {
+  position: absolute;
+  inset: 0;
+  z-index: -20;
+}
+
+.home-background img {
+  margin-top: 3rem; /* smaller margin on mobile */
+  position: absolute;
+  inset: 0;
+  width: 100%; /* don’t overflow on mobile */
+  height: 100%;
+  object-fit:contain; /* cover looks better on all screens */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.home-background img.active {
+  opacity: 1;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background: #e6e8ed66;
+  backdrop-filter: blur(6px);
+}
+
+/* Logo */
+.home-logo {
+  width: 12rem; /* smaller on mobile */
+  max-width: 20rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3));
+  transition: transform 0.5s;
+  animation: float 3s ease-in-out infinite;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .home-logo {
+    width: 20rem;
+    max-width: 30rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.home-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Headline */
+.home-headline {
+  font-size: 1.75rem; /* smaller on mobile */
+  max-width: 90%;
+  font-weight: 700;
+  color: #163588;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 0.75rem;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .home-headline {
+    font-size: 4rem;
+  }
+}
+
+/* Subtext */
+.home-subtext {
+  font-size: 1rem; /* smaller text on mobile */
+  max-width: 90%;
+  color: #262424;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .home-subtext {
+    font-size: 1.5rem;
+    max-width: 35rem;
+  }
+}
+
+/* CTA Button */
+.home-cta {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #1e3a8a;
+  color: #f7f9fb;
+  font-weight: 500;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease-in-out;
+  z-index: 20;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.home-cta:hover {
+  background-color: #ec4899;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .home-cta {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Scroll Down Button */
+.home-scroll {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 20;
+  animation: bounce 2s infinite;
+  color: #1e3a8a;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .home-scroll {
+    bottom: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Floating animation for logo */
+@keyframes float {
+  0%, 100% { transform: translateY(0) }
+  50% { transform: translateY(-10px) }
+}
+
+/* Scroll bounce */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) }
+  50% { transform: translateY(-10px) }
+}

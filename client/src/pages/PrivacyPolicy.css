@@ -1,0 +1,109 @@
+/* Container */
+.privacy-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem;
+}
+
+/* Heading */
+.privacy-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+/* Card */
+.privacy-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Links */
+.privacy-link {
+  color: #1e3a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Section */
+.privacy-section {
+  margin-top: 1.5rem;
+}
+
+.privacy-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-text {
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Lists */
+.privacy-card ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.privacy-card li {
+  margin-bottom: 0.5rem;
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 5rem 1rem; /* reduce vertical padding */
+  }
+
+  .privacy-heading {
+    font-size: 2rem; /* smaller heading */
+  }
+
+  .privacy-card {
+    padding: 1.5rem; /* less padding inside */
+  }
+
+  .privacy-subheading {
+    font-size: 1.25rem;
+  }
+
+  .privacy-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-container {
+    padding: 3rem 1rem; /* tighter spacing on very small screens */
+  }
+
+  .privacy-heading {
+    font-size: 1.75rem;
+  }
+
+  .privacy-card {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .privacy-subheading {
+    font-size: 1.1rem;
+  }
+
+  .privacy-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
