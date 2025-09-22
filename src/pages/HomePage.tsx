@@ -1,12 +1,12 @@
 // src/pages/HomePage.tsx
-import React from "react";
+// import React from "react";
 import Home from "./Home";
 import About from "./About";
 import Products from "./Products";
 import Contact from "./Contact";
-import Tips from "./Tips";
+// import Tips from "./Tips";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import Features from "./Feature";
+// import Features from "./Feature";
 const HomePage = () => {
   return (
     <>

@@ -42,7 +42,7 @@ const slides: Slide[] = [
 
 const About: React.FC = () => {
   const [current, setCurrent] = useState(0);
-  const sliderRef = useRef<HTMLDivElement>(null);
+  // const sliderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {

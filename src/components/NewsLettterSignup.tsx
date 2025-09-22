@@ -5,7 +5,6 @@ import {
   FaGift,
   FaNewspaper,
   FaCheck,
-  FaTimes,
 } from "react-icons/fa";
 
 const NewsletterSignup = () => {
