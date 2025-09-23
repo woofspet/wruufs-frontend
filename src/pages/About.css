@@ -396,7 +396,7 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 4rem;
-  color: #2a2a2a;
+  color: #1e40af;
   position: relative;
   display: inline-block;
   letter-spacing: 0.05em;
@@ -571,31 +571,48 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .vision-cards-container {
-    flex-direction: column;
-    align-items: center;
+  .vision-card.blue {
+    --card-gradient: linear-gradient(45deg, #91b4ff, #1e3aa0);
+    --card-icon-color: #1e3aa0;
+  }
+  .vision-card.red {
+    --card-gradient: linear-gradient(45deg, #f59ac2, #d91f70);
+    --card-icon-color: #d91f70;
+  }
+  .vision-card.purple {
+    --card-gradient: linear-gradient(45deg, #b491f3, #3f1b75);
+    --card-icon-color: #3f1b75;
+  }
+  .vision-card.blue .card-header {
+  background: var(--card-gradient);
+  }
+  .vision-card.red .card-header {
+    background: var(--card-gradient);
+  }
+  .vision-card.purple .card-header {
+    background: var(--card-gradient);
   }
   .vision-card {
-    max-width: 90%;
-    margin-top: 4rem;
-    min-height: 400px;
-    padding-bottom: 2rem;
-  }
-  .vision-section {
-    padding: 4rem 0.5rem;
-  }
-  .vision-heading {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-  .card-header {
-    top: -3rem;
-  }
-  .card-content {
-    padding: 4.5rem 1.5rem 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
 }
+
 @media (max-width: 480px) {
+    .vision-card.blue {
+    --card-gradient: linear-gradient(45deg, #91b4ff, #1e3aa0);
+    --card-icon-color: #1e3aa0;
+  }
+  .vision-card.red {
+    --card-gradient: linear-gradient(45deg, #f59ac2, #d91f70);
+    --card-icon-color: #d91f70;
+  }
+  .vision-card.purple {
+    --card-gradient: linear-gradient(45deg, #b491f3, #3f1b75);
+    --card-icon-color: #3f1b75;
+  }
+  .vision-card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
   .vision-heading {
     font-size: 2rem;
     margin-bottom: 2.5rem;
