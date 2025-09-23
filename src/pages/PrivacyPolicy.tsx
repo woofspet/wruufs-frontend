@@ -1,5 +1,6 @@
 import React from "react";
-import "./PrivacyPolicy.css"; // Import external CSS
+import "./PrivacyPolicy.css"; 
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const PrivacyPolicy: React.FC = () => {
   return (
@@ -126,6 +127,7 @@ const PrivacyPolicy: React.FC = () => {
           </ul>
         </Section>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 };

@@ -62,9 +62,10 @@
   color: #374151;
 }
 
-/* 🔹 Responsive Styles */
+/*  Responsive Styles */
 @media (max-width: 1024px) {
   .terms-container {
+    margin-top: 2rem;
     padding: 6rem 1.25rem;
   }
 

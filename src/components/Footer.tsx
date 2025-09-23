@@ -101,8 +101,14 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>
           © {new Date().getFullYear()} All Rights Reserved.{" "}
-          <Link to="/terms-of-use">Terms Of Use</Link> and{" "}
-          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms-of-use" 
+            onClick={() =>
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+            }>Terms Of Use</Link> and{" "}
+          <Link to="/privacy-policy"
+            onClick={() =>
+               window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+             }>Privacy Policy</Link>
         </p>
 
         <div className="footer-social">

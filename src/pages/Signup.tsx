@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Signup.css";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const Signup: React.FC = () => {
   const [name, setName] = useState("");
@@ -75,6 +76,7 @@ const Signup: React.FC = () => {
           </Link>
         </p>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 };

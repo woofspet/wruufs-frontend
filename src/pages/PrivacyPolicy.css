@@ -1,6 +1,6 @@
 /* Container */
 .privacy-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 8rem 1.5rem;
 }
@@ -61,10 +61,11 @@
   margin-bottom: 0.5rem;
 }
 
-/* ✅ Mobile Responsiveness */
+/*  Mobile Responsiveness */
 @media (max-width: 768px) {
   .privacy-container {
-    padding: 5rem 1rem; /* reduce vertical padding */
+    margin-top: 2rem;
+    padding: 6rem 1rem; /* reduce vertical padding */
   }
 
   .privacy-heading {

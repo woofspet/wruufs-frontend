@@ -1,4 +1,4 @@
-/* All CSS from your original file, with the new .vision-section styles added */ /* Banner wrapper: full width & height */
+/* Banner wrapper: full width & height */
 .about-banner {
   position: relative;
   width: 100%;
@@ -426,7 +426,7 @@ body {
   width: 100%;
   max-width: 380px;
   text-align: center;
-  position: relative;
+  /* Removed position: relative; to fix mobile view */
   padding-bottom: 2.5rem;
   margin-top: 4rem;
   min-height: 420px;
@@ -438,10 +438,7 @@ body {
   border: 1px solid #f0f0f0;
 }
 .card-header {
-  position: absolute;
-  top: -3.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  /* No longer absolutely positioned */
   width: 120px;
   height: 60px;
   border-top-left-radius: 60px;
@@ -452,6 +449,8 @@ body {
   align-items: center;
   z-index: 2;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-top: -3.5rem;
+  margin-bottom: 1.5rem;
 }
 .card-content {
   background-color: #fff;
