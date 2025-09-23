@@ -336,7 +336,7 @@ const About: React.FC = () => {
           className="vision-cards-container"
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
+          animate="visible"
           viewport={{ once: true, amount: 0.5 }}
         >
           {/* Vision Card 1: Quality & Nutrition */}
