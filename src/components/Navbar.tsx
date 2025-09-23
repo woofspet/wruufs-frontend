@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Search from "./Search";
 import Profile from "./Profile";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const navItems = ["Home", "About", "Products", "Contact"];
 
@@ -46,11 +47,13 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Left: Logo */}
         <div className="flex items-center gap-3">
-          <img
-            src="/logo/wruufs.svg"
-            alt="Wruufs Logo"
-            className="navbar-logo"
-          />
+          <Link to="/">
+            <img
+              src="/logo/wruufs.svg"
+              alt="Wruufs Logo"
+              className="navbar-logo"
+            />
+          </Link>
         </div>
 
         {/* Center: Nav Items */}
