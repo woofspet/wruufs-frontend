@@ -1,5 +1,5 @@
 
-import { FaInstagram, FaEnvelope as FaMail ,FaWhatsapp} from "react-icons/fa";
+import { FaInstagram, FaEnvelope as FaMail ,FaWhatsapp, FaFacebook} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 // import dotenv from "dotenv";
@@ -22,6 +22,12 @@ const socialLinks = [
     href: `https://wa.me/${import.meta.env.VITE_WRUUFS_CONTACT_NUMBER}`,
     label: "Whatsapp",
   },
+  {
+    icon: <FaFacebook />,
+    href: `https://www.facebook.com/people/${import.meta.env.VITE_WRUUFS_FACEBOOK}`,
+    label: "Facebook",
+  },
+
 ];
 
 const productLinks = [

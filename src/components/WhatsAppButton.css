@@ -1,0 +1,36 @@
+.whatsapp-button {
+  @apply fixed bottom-24 right-6 bg-green-500 text-white text-3xl
+         w-14 h-14 flex items-center justify-center rounded-full 
+         shadow-lg cursor-pointer transition-transform duration-300 
+         hover:bg-green-600 hover:scale-110;
+  z-index: 50;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-icon {
+  @apply text-white;
+}
+
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.chat-label {
+  @apply fixed bottom-28 right-24 bg-white text-gray-700 
+         px-3 py-1 rounded-full shadow-md text-sm
+         font-medium z-50;
+}
+
+/* Speech bubble arrow */
+.chat-label::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+

@@ -127,7 +127,8 @@
 
 .flip-card-back {
   /* Set the background image and its properties */
-  background-image: url('/dogs/card_1.jpeg'); /* Replace with your image path */
+  /* background-image: url('/dogs/card_1.jpeg');  */
+  /* Replace with your image path */
   background-size: cover; /* This makes the image cover the entire card */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from tiling */
@@ -163,20 +164,53 @@
 
 /* --- New CSS for specific colors --- */
 .flip-card-back.blue-back {
-  background-image: url('/dogs/flip_back.png'); /* Add your image path */
+  background-image: url('/dogs/blue_back.jpeg');
+   /* Add your image path */
   background-color: #2b57c793;
   color: #fff;
 }
 
 .flip-card-back.pink-back {
-  background-image: url('/dogs/flip_back.png'); /* Add your image path */
+  background-image: url('/dogs/pink_back.jpeg'); 
+  /* Add your image path */
   background-color: rgba(236, 72, 153, 0.4);
   color: #fff;
 }
 
 .flip-card-back.purple-back {
-  background-image: url('/dogs/flip_back.png'); /* Add your image path */
+  background-image: url('/dogs/purple_back.jpeg'); 
+  /* Add your image path */
   background-color: rgba(65, 37, 87, 0.824);
+  color: #fff;
+}
+.flip-card-back.black-back {
+  background-image: url('/dogs/black_back.jpeg'); 
+  /* Add your image path */
+  background-color: rgba(41, 41, 42, 0.824);
+  color: #fff;
+}
+.flip-card-back.red-back {
+  background-image: url('/dogs/red_back.jpeg'); 
+  /* Add your image path */
+  background-color: rgba(220, 9, 9, 0.824);
+  color: #fff;
+}
+.flip-card-back.navy-blue-back {
+  background-image: url('/dogs/navy_blue_back.jpeg');
+   /* Add your image path */
+  background-color: rgba(9, 38, 105, 0.824);
+  color: #fff;
+}
+.flip-card-back.light-blue-back {
+  background-image: url('/dogs/light_blue_back.jpeg');
+   /* Add your image path */
+  background-color: rgba(9, 38, 105, 0.824);
+  color: #fff;
+}
+.flip-card-back.brown-back {
+  background-image: url('/dogs/brown_back.jpeg');
+   /* Add your image path */
+  background-color: rgba(9, 38, 105, 0.824);
   color: #fff;
 }
 
@@ -215,13 +249,51 @@
 }
 
 .flip-card-back.purple-back .view-more-btn {
-  background-color: #785b83; /* A deep purple for the purple card */
+  background-color: #674773; /* A deep purple for the purple card */
 }
 
 .flip-card-back.purple-back .view-more-btn:hover {
-  background-color: #5a4261;
+  background-color: #3e2b44;
 }
 
+.flip-card-back.black-back .view-more-btn {
+  background-color: #232323; /* A deep purple for the purple card */
+}
+
+.flip-card-back.brown-back .view-more-btn:hover {
+  background-color: #161616;
+}
+.flip-card-back.brown-back .view-more-btn {
+  background-color: #232323; /* A deep purple for the purple card */
+}
+
+.flip-card-back.black-back .view-more-btn:hover {
+  background-color: #161616;
+}
+
+.flip-card-back.light-blue-back .view-more-btn {
+  background-color: #0b69a4; /* A deep purple for the purple card */
+}
+
+.flip-card-back.light-blue-back .view-more-btn:hover {
+  background-color: #063d5f;
+}
+
+.flip-card-back.red-back .view-more-btn {
+  background-color: #a52020; /* A vibrant pink for the pink card */
+}
+
+.flip-card-back.red-back .view-more-btn:hover {
+  background-color: #740808;
+}
+
+.flip-card-back.navy-blue-back .view-more-btn {
+  background-color: #09318f; /* A deep purple for the purple card */
+}
+
+.flip-card-back.navy-blue-back .view-more-btn:hover {
+  background-color: #071c4b;
+}
 
 /* Product Details */
 .product-details {
