@@ -4,7 +4,9 @@
          shadow-lg cursor-pointer transition-transform duration-300 
          hover:bg-blue-900 hover:scale-110;
   z-index: 50;
+  animation: pulse 2s infinite;
 }
+
 
 /* Add a subtle pulse animation for visibility */
 .scroll-to-top {

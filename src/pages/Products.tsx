@@ -50,13 +50,89 @@ export const productsData = [
     ingredients: "Chicken, Rice, Vegetables, Vitamins And Essential Nutrients",
     backColorClass: "purple-back",
   },
+
+  {
+    id: 4,
+
+    name: "VitaVin Pet",
+
+    category: "nutrition",
+
+    image: "/products/vita-vin.PNG",
+
+    description: "A complete amino acid, multivitamin, antioxidant, and herbal wellness supplement",
+
+    ingredients: "Essential Amino Acids, Vitamin B-Complex, Multivitamins, Herbs",
+    backColorClass: "navy-blue-back",
+  },
+
+  {
+    id: 5,
+
+    name: "HepiBark Pet",
+
+    category: "nutrition",
+
+    image: "/products/hepi-bark.PNG",
+
+    description: "A comprehensive liver-care and nutritional support formula",
+
+    ingredients: "Vitamin B-Complex, Iron Supplements, Liver Extract, Yeast Extract, Herbs",
+    backColorClass: "red-back",
+  },
+
+  {
+    id: 6,
+
+    name: "Pawbiotic",
+
+    category: "nutrition",
+
+    image: "/products/paw-biotic.PNG",
+
+    description: "A scientifically formulated gut health supplement",
+
+    ingredients: "3 Billion CFU Probiotics, Prebiotics, Enzyme Complex",
+    backColorClass: "black-back",
+  },
+
+    {
+    id: 7,
+
+    name: "Furé Dry Bath Shampoo",
+
+    category: "grooming",
+
+    image: "/products/fure.PNG",
+
+    description: "A premium no-rinse dry bath shampoo",
+
+    ingredients: "Aloe Vera Extract,Tea Tree Oil, Neem Extract, Lavender Essential Oil,Vitamin E",
+    backColorClass: "brown-back",
+  },
+
+  {
+    id: 8,
+
+    name: "PawLuxe Paw Cleaner",
+
+    category: "grooming",
+
+    image: "/products/paw-cleaner.png",
+
+    description: "A gentle, nourishing paw cleanser",
+
+    ingredients: "Aqua, Coconut Oil, Aloe Vera Extract, Glycerin, Strawberry Essence",
+    backColorClass: "light-blue-back",
+  },
+
 ];
 
 
 
 const Products: React.FC = () => {
 
-const [filter, setFilter] = useState<"all" | "adult" | "puppy">("all");
+const [filter, setFilter] = useState<"all" | "adult" | "puppy" | "nutrition" | "grooming">("all");
 
 const [search, setSearch] = useState("");
 
@@ -125,6 +201,20 @@ return (
           onClick={() => setFilter("puppy")}
         >
           Puppy Food
+        </button>
+
+        <button
+          className={`filter-btn ${filter === "nutrition" ? "active" : ""}`}
+          onClick={() => setFilter("nutrition")}
+        >
+          Nutritional Range 
+        </button>
+        
+        <button
+          className={`filter-btn ${filter === "grooming" ? "active" : ""}`}
+          onClick={() => setFilter("grooming")}
+        >
+          Grooming Range
         </button>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Products from "./Products";
 import Contact from "./Contact";
 // import Tips from "./Tips";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import WhatsAppButton from "../components/WhatsAppButton";
 // import Features from "./Feature";
 const HomePage = () => {
   return (
@@ -28,6 +29,7 @@ const HomePage = () => {
         </section>
       </main>
       <ScrollToTopButton />
+      <WhatsAppButton/>
     </>
   );
 };
