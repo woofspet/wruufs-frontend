@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="https://www.wruufs.com/logo/wruufs-192.png" />
+    <link rel="icon" type="image/png" href="https://www.wruufs.com/logo/wruufs.png" />
+    <link rel="icon" sizes="192x192" href="https://www.wruufs.com/src/assets/wruufs-192.png" />
 
     <!-- Preconnect for faster Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +27,12 @@
     />
     <meta
       name="keywords"
-      content="Wruufs, dog food, pet food, natural dog food, premium pet food, healthy dog food, pet nutrition, Wruufs food, pet supplements, Wruufs"
+      content="Wruufs, dog food, pet food, natural dog food, premium pet food, healthy dog food, pet nutrition, Wruufs food, pet supplements"
     />
     <meta name="author" content="Wruufs" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph (Social Sharing) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Wruufs – Premium Natural Dog Food & Pet Nutrition" />
     <meta property="og:description" content="Premium pet food and supplements for dogs." />
     <meta property="og:image" content="https://www.wruufs.com/logo/wruufs.png" />
@@ -44,58 +46,35 @@
     <meta name="twitter:description" content="Premium pet food and supplements for dogs." />
     <meta name="twitter:image" content="https://www.wruufs.com/logo/wruufs.png" />
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Wruufs",
-      "url": "https://www.wruufs.com",
-      "logo": "https://www.wruufs.com/logo/wruufs-192.png",
-      "sameAs": [
-        "https://www.instagram.com/wruufs.india"
-      ],
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "email": "contact@wruufs.com"
-      }]
-    }
-    </script>
-
+    <!-- ✅ CLEAN STRUCTURED DATA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "Organization",
+          "@id": "https://www.wruufs.com/#organization",
+          "name": "Wruufs",
+          "url": "https://www.wruufs.com",
+          "logo": "https://www.wruufs.com/src/assets/wruufs-192.png",
+          "sameAs": [
+            "https://www.instagram.com/wruufs.india"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "contact@wruufs.com"
+          }
+        },
+        {
           "@type": "WebSite",
+          "@id": "https://www.wruufs.com/#website",
           "url": "https://www.wruufs.com",
           "name": "Wruufs",
-          "description": "Nourish your pet with Wruufs premium dog food. Crafted with real, wholesome ingredients for a happy, healthy, and vibrant life."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.wruufs.com/products",
-          "name": "Dog Food",
-          "description": "Wruufs provides the best dog food, treats & supplements for all breeds in India."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.wruufs.com/contact",
-          "name": "Contact Us",
-          "description": "Email: contact@wruufs.com"
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.wruufs.com/about",
-          "name": "About Us",
-          "description": "Learn more about Wruufs, a trusted brand offering premium pet food."
-        },
-        {
-          "@type": "WebPage",
-          "url": "https://www.wruufs.com/products",
-          "name": "Our Products",
-          "description": "Discover our range of products."
+          "description": "Nourish your pet with Wruufs premium dog food. Crafted with real, wholesome ingredients for a happy, healthy, and vibrant life.",
+          "publisher": {
+            "@id": "https://www.wruufs.com/#organization"
+          }
         }
       ]
     }
@@ -104,10 +83,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wruufs – Premium Natural Dog Food & Pet Nutrition</title>
   </head>
+
   <body>
     <div id="root"></div>
-
-    <!-- Main entry -->
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
