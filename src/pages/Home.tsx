@@ -17,21 +17,21 @@ const Home = () => {
       name: "Premium Puppy Formula",
       description: "Rich in protein for growing pups.",
       ingredients: "Chicken, Rice, Carrots",
-      imageUrl: "/products/wruufs_p1_bg.png",
+      imageUrl: "/products/product1.png",
     },
     {
       id: 2,
       name: "Adult Dog Blend",
       description: "Balanced nutrition for adult dogs.",
       ingredients: "Beef, Sweet Potato, Spinach",
-      imageUrl: "/products/wruufs_p2_bg.png",
+      imageUrl: "/products/product2.png",
     },
     {
       id: 3,
       name: "Senior Dog Care",
       description: "Joint-friendly recipe for seniors.",
       ingredients: "Salmon, Brown Rice, Peas",
-      imageUrl: "/products/wruufs_p3_bg.png",
+      imageUrl: "/products/product3.png",
     },
   ];
 
