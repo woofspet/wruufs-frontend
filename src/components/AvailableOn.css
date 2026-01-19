@@ -1,0 +1,83 @@
+/* ---------------- Available On Section ---------------- */
+
+.available-section {
+  padding: 70px 20px;
+  text-align: center;
+  background: #f0f2f4;
+}
+
+.available-text {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #0945a4;
+}
+
+.available-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* ✅ prevents overflow */
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-circle:hover {
+  transform: scale(1.12);
+}
+
+.logo-circle img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+
+/* 📱 Mobile */
+@media (max-width: 640px) {
+  .available-section {
+    padding: 50px 15px;
+  }
+
+  .available-text {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .available-logos {
+    gap: 20px;
+  }
+
+  .logo-circle {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+/* 📱 Small tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .available-text {
+    font-size: 2rem;
+  }
+
+  .logo-circle {
+    width: 105px;
+    height: 105px;
+  }
+
+  .available-logos {
+    gap: 35px;
+  }
+}

@@ -7,6 +7,8 @@ import Contact from "./Contact";
 // import Tips from "./Tips";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import WhatsAppButton from "../components/WhatsAppButton";
+// import AvailableOn from "../components/AvailableOn";
+
 // import Features from "./Feature";
 const HomePage = () => {
   return (
@@ -18,6 +20,9 @@ const HomePage = () => {
         <section id="about" className="min-h-screen">
           <About />
         </section>
+        {/* <section className="min-h-[40vh]">
+          <AvailableOn />
+        </section> */}
         <section id="products" className="min-h-screen">
           <Products />
         </section>
