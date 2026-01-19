@@ -2,128 +2,97 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import AvailableOn from "../components/AvailableOn";
 
 
 
 export const productsData = [
   {
     id: 1,
-
     name: "Adult Dog Kibble",
-
     category: "adult",
-
     image: "/products/product1.png",
-
     description: "Complete nutrition for adult dogs with balanced proteins",
-
     ingredients: "Chicken, Rice, Vegetables, Vitamins And Essential Nutrients",
     backColorClass: "blue-back",
+    amazonUrl : "https://tinyurl.com/3ubsswk8"
   },
 
   {
     id: 2,
-
     name: "Premium Adult Food",
-
     category: "adult",
-
     image: "/products/product2.png",
-
     description: "A wholesome chicken & rice meal to keep your dog happy.",
-
     ingredients: "Chicken, Vegetables, Natural Flavorings",
     backColorClass: "pink-back",
+    amazonUrl : "https://tinyurl.com/hmry9pek"
   },
 
   {
     id: 3,
-
     name: "Premium Puppy Food",
-
     category: "puppy",
-
     image: "/products/product3.png",
-
     description: "Nutritious food for growing puppies with essential vitamins",
-
     ingredients: "Chicken, Rice, Vegetables, Vitamins And Essential Nutrients",
     backColorClass: "purple-back",
+    amazonUrl : ""
   },
 
   {
     id: 4,
-
     name: "VitaVin Pet",
-
     category: "nutrition",
-
     image: "/products/vita-vin.PNG",
-
     description: "A complete amino acid, multivitamin, antioxidant, and herbal wellness supplement",
-
     ingredients: "Essential Amino Acids, Vitamin B-Complex, Multivitamins, Herbs",
     backColorClass: "navy-blue-back",
+    amazonUrl : "https://tinyurl.com/mrx9w5bw"
   },
 
   {
     id: 5,
-
     name: "HepiBark Pet",
-
     category: "nutrition",
-
     image: "/products/hepi-bark.PNG",
-
     description: "A comprehensive liver-care and nutritional support formula",
-
     ingredients: "Vitamin B-Complex, Iron Supplements, Liver Extract, Yeast Extract, Herbs",
     backColorClass: "red-back",
+    amazonUrl : "https://tinyurl.com/3mez84ne"
   },
 
   {
     id: 6,
-
     name: "Pawbiotic",
-
     category: "nutrition",
-
     image: "/products/paw-biotic.PNG",
-
     description: "A scientifically formulated gut health supplement",
-
     ingredients: "3 Billion CFU Probiotics, Prebiotics, Enzyme Complex",
     backColorClass: "black-back",
+    amazonUrl : "https://tinyurl.com/4n9ya44x"
   },
 
     {
     id: 7,
-
     name: "Furé Dry Bath Shampoo",
-
     category: "grooming",
-
     image: "/products/fure.PNG",
-
     description: "A premium no-rinse dry bath shampoo",
-
     ingredients: "Aloe Vera Extract,Tea Tree Oil, Neem Extract, Lavender Essential Oil,Vitamin E",
     backColorClass: "brown-back",
+    amazonUrl : "https://tinyurl.com/4yjnsc2e"
   },
 
   {
     id: 8,
-
     name: "PawLuxe Paw Cleaner",
-
     category: "grooming",
-
     image: "/products/paw-cleaner.png",
-
     description: "A gentle, nourishing paw cleanser",
-
     ingredients: "Aqua, Coconut Oil, Aloe Vera Extract, Glycerin, Strawberry Essence",
     backColorClass: "light-blue-back",
+    amazonUrl : "https://tinyurl.com/5253hkae"
   },
 
 ];
@@ -248,6 +217,16 @@ return (
                 >
                   View More
                 </Link>
+                {product.amazonUrl && (
+                  <a
+                    href={product.amazonUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="buy-now-btn"
+                  >
+                    🛒 Buy Now
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -270,6 +249,7 @@ return (
       </Link>
     </div>
     <ScrollToTopButton />
+    <AvailableOn />
   </section>
 );
 
