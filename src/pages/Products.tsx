@@ -15,7 +15,8 @@ export const productsData = [
     description: "Complete nutrition for adult dogs with balanced proteins",
     ingredients: "Chicken, Rice, Vegetables, Vitamins And Essential Nutrients",
     backColorClass: "blue-back",
-    amazonUrl : "https://tinyurl.com/3ubsswk8"
+    amazonUrl : "https://tinyurl.com/3ubsswk8",
+    flipkartUrl : "https://tinyurl.com/59bcnn42" //"https://tinyurl.com/ymavs3xf"
   },
 
   {
@@ -26,7 +27,8 @@ export const productsData = [
     description: "A wholesome chicken & rice meal to keep your dog happy.",
     ingredients: "Chicken, Vegetables, Natural Flavorings",
     backColorClass: "pink-back",
-    amazonUrl : "https://tinyurl.com/hmry9pek"
+    amazonUrl : "https://tinyurl.com/hmry9pek",
+    flipkartUrl : "https://tinyurl.com/56c2ks4d"
   },
 
   {
@@ -48,7 +50,8 @@ export const productsData = [
     description: "A complete amino acid, multivitamin, antioxidant, and herbal wellness supplement",
     ingredients: "Essential Amino Acids, Vitamin B-Complex, Multivitamins, Herbs",
     backColorClass: "navy-blue-back",
-    amazonUrl : "https://tinyurl.com/mrx9w5bw"
+    amazonUrl : "https://tinyurl.com/mrx9w5bw",
+    flipkartUrl : "https://tinyurl.com/54kethuz"
   },
 
   {
@@ -59,7 +62,8 @@ export const productsData = [
     description: "A comprehensive liver-care and nutritional support formula",
     ingredients: "Vitamin B-Complex, Iron Supplements, Liver Extract, Yeast Extract, Herbs",
     backColorClass: "red-back",
-    amazonUrl : "https://tinyurl.com/3mez84ne"
+    amazonUrl : "https://tinyurl.com/3mez84ne",
+    flipkartUrl : "https://tinyurl.com/44rzdjzw"
   },
 
   {
@@ -70,7 +74,8 @@ export const productsData = [
     description: "A scientifically formulated gut health supplement",
     ingredients: "3 Billion CFU Probiotics, Prebiotics, Enzyme Complex",
     backColorClass: "black-back",
-    amazonUrl : "https://tinyurl.com/4n9ya44x"
+    amazonUrl : "https://tinyurl.com/4n9ya44x",
+    flipkartUrl : "https://tinyurl.com/yp7y6748"
   },
 
     {
@@ -81,7 +86,8 @@ export const productsData = [
     description: "A premium no-rinse dry bath shampoo",
     ingredients: "Aloe Vera Extract,Tea Tree Oil, Neem Extract, Lavender Essential Oil,Vitamin E",
     backColorClass: "brown-back",
-    amazonUrl : "https://tinyurl.com/4yjnsc2e"
+    amazonUrl : "https://tinyurl.com/4yjnsc2e",
+    flipkartUrl : "https://tinyurl.com/44rja3pu"
   },
 
   {
@@ -92,7 +98,8 @@ export const productsData = [
     description: "A gentle, nourishing paw cleanser",
     ingredients: "Aqua, Coconut Oil, Aloe Vera Extract, Glycerin, Strawberry Essence",
     backColorClass: "light-blue-back",
-    amazonUrl : "https://tinyurl.com/5253hkae"
+    amazonUrl : "https://tinyurl.com/5253hkae",
+    flipkartUrl : "https://tinyurl.com/bdm24r9p"
   },
 
 ];
@@ -134,7 +141,7 @@ return (
       </div>
     </div>
 
-    {/* 🔍 Search Bar (moved ABOVE filter buttons) */}
+    {/*  Search Bar (moved ABOVE filter buttons) */}
 
     <div className="controls-row">
       {/* Search Bar */}
@@ -148,7 +155,7 @@ return (
         />
       </div>
 
-      {/* 🔎 Filter Buttons */}
+      {/* Filter Buttons */}
 
       <div className="filter-bar">
         <button
@@ -188,7 +195,7 @@ return (
       </div>
     </div>
 
-    {/* 🐶 Products Grid */}
+    {/*  Products Grid */}
 
     <div className="products-container">
       <div className="products-grid">
@@ -224,7 +231,17 @@ return (
                     rel="noreferrer"
                     className="buy-now-btn"
                   >
-                    🛒 Buy Now
+                    🛒 Buy On Amazon
+                  </a>
+                )}
+                {product.flipkartUrl && (
+                  <a
+                    href={product.flipkartUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="buy-now-btn"
+                  >
+                    🛒 Buy On Flipkart
                   </a>
                 )}
               </div>
@@ -237,7 +254,7 @@ return (
       </div>
     </div>
 
-    {/* 💡 Contact Section */}
+    {/* Contact Section */}
 
     <div className="contact-expert-section">
       <h3>Can't find what you're looking for?</h3>
